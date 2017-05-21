@@ -80,9 +80,10 @@ body{
 
 .menu{
 	width: 1000px;
-	height: 27px;
+	height: 26px;
 	border-bottom: 1px solid #000;
 	background: url(../img/menu-bg.png) repeat-x;
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .menu>ul{
@@ -92,6 +93,7 @@ body{
 }
 
 .menu>ul>li{
+	height: 27px;
 	padding: 0 30px;
 	list-style: none;
 	float: left;
@@ -122,15 +124,29 @@ body{
     border-top: 6px solid #fff;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    position: relative;
-    top: 14px;
-    left: 4px;
+    position: absolute; 
+}
+
+#triangle_down{
+	top: 14px;
+	left: 120px;
+}
+
+#triangle_down2{
+	top: 14px;
+	left: 77px;
+}
+
+#triangle_down3{
+	top: 14px;
+	left: 103px;
 }
 
 ul.hidden-menu1, ul.hidden-menu2, ul.hidden-menu3{
 	background: #303030;
 	position: absolute;
-	left: 20px;
+	left: 14px;
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 ul.hidden-menu1>li, ul.hidden-menu2>li, ul.hidden-menu3>li{
@@ -159,6 +175,7 @@ li.toPartners:hover ul.hidden-menu3{
 	width: 210px;
 	background: #edeef0;
 	float: left;
+	margin-top: 2px;
 }
 
 .leftbar h3, .rightbar h3{
@@ -175,6 +192,7 @@ li.toPartners:hover ul.hidden-menu3{
 	font-size: 14px;
 	font-family: 'Tahoma';
 	padding: 4px 15px;
+	line-height: 25px;
 }
 
 .centerbar{
@@ -185,11 +203,22 @@ li.toPartners:hover ul.hidden-menu3{
 	border-right: 1px solid #c7cacf;
 }
 
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
 .rightbar{
 	width: 210px;
 	background: #edeef0;
 	float: right;
+	margin-top: 2px;
 }
+
+/*.clearfix{
+	clear: both;
+}*/
 
 hr{
 	border: none;
