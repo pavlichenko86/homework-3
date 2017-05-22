@@ -11,14 +11,14 @@ body{
 	width: 1000px;
 	height: 100%;
 	margin: 0 auto;
-	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
 }
 
 .header{
 	width: 1000px;
 	height: 175px;
 	margin: 0 auto;
-	font-family: 'Tahoma';
+	font-family: 'Tahoma', sans-serif;
 	font-size: 12px;
 	color: #128aa7;
 	background: #fff;
@@ -94,11 +94,10 @@ body{
 
 .menu>ul>li{
 	height: 27px;
-	padding: 0 30px;
 	list-style: none;
 	float: left;
 	text-decoration: none;
-	font-family: 'Tahoma';
+	font-family: 'Tahoma', sans-serif;
 	color: #fff;
 	font-size: 14px;
 	line-height: 27px;
@@ -106,15 +105,16 @@ body{
 }
 
 .menu>ul>li>a{
+	padding: 4px 30px;
 	text-decoration: none;
-	font-family: 'Tahoma';
+	font-family: 'Tahoma', sans-serif;
 	color: #fff;
 	font-size: 14px;
-	line-height: 27px;
 }
 
 .menu>ul>li>a:hover{
 	color: #e3e3e3;
+	background-color: #413f3f;
 }
 
 #triangle_down, #triangle_down2, #triangle_down3{
@@ -146,13 +146,27 @@ ul.hidden-menu1, ul.hidden-menu2, ul.hidden-menu3{
 	background: #303030;
 	position: absolute;
 	left: 14px;
-	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
 }
 
 ul.hidden-menu1>li, ul.hidden-menu2>li, ul.hidden-menu3>li{
-	width: 100px;
+	width: 150px;
+	height: 27px;
 	list-style: none;
-	padding: 0 35px 0 20px;
+}
+
+ul.hidden-menu1>li>a, ul.hidden-menu2>li>a, ul.hidden-menu3>li>a{
+	text-decoration: none;
+	font-family: 'Tahoma', sans-serif;
+	color: #fff;
+	font-size: 14px;
+	display: block;
+	padding-left: 10px;
+}
+
+ul.hidden-menu1>li>a:hover, ul.hidden-menu2>li>a:hover, ul.hidden-menu3>li>a:hover{
+	color: #e3e3e3;
+	background-color: #413f3f;
 }
 
 ul.hidden-menu1, ul.hidden-menu2, ul.hidden-menu3{
@@ -181,7 +195,7 @@ li.toPartners:hover ul.hidden-menu3{
 .leftbar h3, .rightbar h3{
 	color: #424c43;
 	font-size: 18px;
-	font-family: 'Tahoma';
+	font-family: 'Tahoma', sans-serif;
 	font-weight: normal;
 	margin: 5px 0;
 	text-align: center;
@@ -190,7 +204,7 @@ li.toPartners:hover ul.hidden-menu3{
 .leftbar p, .rightbar p{
 	color: #424c43;
 	font-size: 14px;
-	font-family: 'Tahoma';
+	font-family: 'Tahoma', sans-serif;
 	padding: 4px 15px;
 	line-height: 25px;
 }
@@ -216,10 +230,6 @@ li.toPartners:hover ul.hidden-menu3{
 	margin-top: 2px;
 }
 
-/*.clearfix{
-	clear: both;
-}*/
-
 hr{
 	border: none;
     color: #c7cacf; 
@@ -235,7 +245,7 @@ hr{
 
 .footer p{
 	color: #fff;
-	font-family: 'Tahoma';
+	font-family: 'Tahoma', sans-serif;
 	font-size: 12px;
 	text-align: center;
 	line-height: 30px;
